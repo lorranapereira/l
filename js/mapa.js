@@ -120,7 +120,7 @@ function ver() {
     aux2 = minuto2 - minuto1;    
     hora.push(aux2+":"+aux1);
     console.log(hora);
-    metros.push("Você percorreu "+document.getElementsByClassName("adp-summary")[0].children[0].textContent);
+    metros.push("kkk");
     localStorage.metros = JSON.stringify(metros);  
     localStorage.hora = JSON.stringify(hora);  
     adicionaroutra();
