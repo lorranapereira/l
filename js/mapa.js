@@ -93,6 +93,7 @@ function p() {
         travelMode: google.maps.TravelMode.DRIVING
     };
     chegada.push(request.destination);
+    console.log(request.travelMode);
     localStorage.chegada = JSON.stringify(chegada);    
     directionsService.route(request, function(result, status) {
         if (status == google.maps.DirectionsStatus.OK) {
@@ -120,7 +121,7 @@ function ver() {
     aux2 = minuto2 - minuto1;    
     hora.push(aux2+":"+aux1);
     console.log(hora);
-    metros.push("kkk");
+    metros.push("Você percorreu "+document.getElementsByClassName("adp-summary")[0].children[0].textContent);
     localStorage.metros = JSON.stringify(metros);  
     localStorage.hora = JSON.stringify(hora);  
     adicionaroutra();
