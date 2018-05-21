@@ -121,7 +121,7 @@ function ver() {
     aux2 = minuto2 - minuto1;    
     hora.push(aux2+":"+aux1);
     console.log(hora);
-    metros.push("Você percorreu "+directionsDisplay.directions.routes[0].legs[0].distance.text);
+    metros.push("Você percorreu ");
     localStorage.metros = JSON.stringify(metros);  
     localStorage.hora = JSON.stringify(hora);  
     adicionaroutra();
